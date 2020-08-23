@@ -48,12 +48,31 @@ class MahasiswaController extends CI_Controller
             return $this->response([
                 "error"         => true,
                 "massage"       => "Gagal Memasukan Data..",
-            ]);
+            ]); 
         }
 
         return $this->response([
             "error"         => false,
             "massage"       => "Berhasil memasukan data.."
+        ]);
+    }
+
+    public function delete_mahasiswa()
+    {
+        $arrayId = ['id' => $this->input->post('id')];
+
+        $data = $this->MahasiswaModel->delete_mahasiswa($arrayId);
+
+        if ($data == FALSE) {
+             return $this->response([
+                 "error"            => true,
+                 "massage"          => "Gagal menghapus data..",
+             ]);
+        }
+
+        return $this->response([
+            "error"         => false,
+            "massage"       => "Berhasil menghapus data..",
         ]);
     }
 }

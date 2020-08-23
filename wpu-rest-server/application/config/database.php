@@ -7,7 +7,7 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 | -------------------------------------------------------------------
 | This file will contain the settings needed to access your database.
 |
-| For complete instructions please consult the 'Database Connection'
+| For complete instruction s please consult the 'Database Connection'
 | page of the User Guide.
 |
 | -------------------------------------------------------------------
@@ -77,8 +77,8 @@ $db['default'] = array(
 	'dsn'	=> '',
 	'hostname' => 'localhost',
 	'username' => 'root',
-	'password' => 'root', //TODO: password sesuaikan sama password MySQL mu, defaultnya kosong
-	'database' => '', // TODO: nama database liat di PHPMyAdmin, database yang kamu buat di project ini
+	'password' => '', //TODO: password sesuaikan sama password MySQL mu, defaultnya kosong
+	'database' => 'wpu_server', // TODO: nama database liat di PHPMyAdmin, database yang kamu buat di project ini
 	'dbdriver' => 'mysqli',
 	'dbprefix' => '',
 	'pconnect' => FALSE,

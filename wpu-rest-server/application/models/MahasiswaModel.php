@@ -22,4 +22,18 @@ class MahasiswaModel extends CI_Model
         $data = $this->db->insert('mahasiswa', $arraydata);
         return $data ? TRUE : FALSE;
     }
+
+    public function update_mahasiswa($arrayId, $arraydata)
+    {
+        $data = $this->db->where($arrayId)
+                            ->update('mahasiswa', $arraydata);
+        return $data ? TRUE : FALSE;
+    }
+
+    public function delete_mahasiswa($arrayId)
+    {
+        $data = $this->db->where($arrayId)
+                                ->delete('mahasiswa');
+        return $data ? TRUE : FALSE;
+    }
 }
