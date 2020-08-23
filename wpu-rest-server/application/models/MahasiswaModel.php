@@ -8,6 +8,7 @@ class MahasiswaModel extends CI_Model
     function __construct()
     {
         parent::__construct();
+        $this->load->database(); // wajib, kalau udah ada hubungannya sama database!
     }
 
     public function get_mahasiswa()
