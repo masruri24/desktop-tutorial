@@ -50,7 +50,7 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 |		my-controller/my-method	-> my_controller/my_method
 */
 $route['mahasiswa/get_data']['GET']     = 'mahasiswaController/get_mahasiswa';
-$route['mahasiswa/insert_data']['POST'] = 'MahasiswaController/update_mahasiswa';
+$route['mahasiswa/insert_data']['POST'] = 'MahasiswaController/update_mahasiswa'; // ini update data, atau insert data?
 $route['mahasiswa/update_data']['POST'] = 'MahasiswaController/update_mahasiswa';
 $route['mahasiswa/delete_data']['POST'] = 'MahasiswaController/delete_mahasiswa';
 

@@ -56,6 +56,8 @@ class MahasiswaController extends CI_Controller
             "massage"       => "Berhasil memasukan data.."
         ]);
     }
+	
+	// fungsi update nya mana?
 
     public function delete_mahasiswa()
     {
